@@ -522,8 +522,6 @@ def execute_script(args, printer):
 		for line in iter(p.stdout.readline, b''):
 			printer(line)
 	p.wait()
-	# except Exception as e:
-	# 	printer(f"Error while executing script with path - {wad_paths} | Exception - {e}\n")
 
 t = threader_object()
 window = gui(t)
